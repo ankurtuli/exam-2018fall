@@ -30,6 +30,36 @@
             text-align: left;
         }
     </style>
+
+    <script type="text/javascript">
+    
+        function multiply() {
+                let from = document.getElementById("from");
+                let to = document.getElementById("to");
+
+                if (from == "" || to == "" || isNaN(from) || isNaN(to)) {
+                alert("You must enter two integers");
+            }
+
+                else if (from > 0 && to > 0){
+                let result = 1;
+                for (let i = parseInt(from); i <= parseInt(to); i++) {
+                    result * i;
+                }
+            }
+            
+            document.getElementById("result").innerHTML = result;
+            return false;
+
+        }
+
+    
+    
+    </script>
+
+
+
+
 </head>
 
 <body>
@@ -43,13 +73,13 @@
     </p>
     <form>
         <p>
-            From: <input type="text" name="from" size="10"/> To: <input type="text" name="to" size="10">
+            From: <input id="from" type="text" name="from" size="10"/> To: <input id="to" type="text" name="to" size="10">
         </p>
         <p>
-            <input type="submit" name="calc" value="Calculate">
+            <input onclick="return multiply()" type="submit" name="calc" value="Calculate">
             <input type="reset" name="reset" value="CLEAR">
         </p>
-        <p>The product is .</p>
+        <p>The product is <span id="result"> </span> .</p>
     </form>
 
 </body>

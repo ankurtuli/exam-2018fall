@@ -2,27 +2,80 @@
 <html>
 <head>
     <title>Web Tech Exam - Q1.htm</title>
+
+    <style type="text/css">
+    body {
+        margin: none;
+    }
+    div#banner {
+        background-color: lightgray;
+        padding-left: 200px;
+        padding-right: 200px;
+        height: 100px;
+    }
+    iframe{
+        float:right;
+    }
+    #logo {
+        float: right;
+    }
+    div#page {
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+    #ack {
+        margin-left: 200px;
+        font-style: italic;
+        color: navy;
+        font-size: 12px;
+    }
+    h3 {
+        background-color: lightgreen;
+        width: 250px;
+        padding-left: 50px; 
+    }
+    ul {
+        list-style-type: square;
+    }
+    ol {
+        list-style-type: upper-roman;
+    }
+    span {
+        color: red;
+    }
+    a:hover {
+        background-color: yellow;
+        text-decoration: none;
+    }
+    li:first-child {
+        color: darkred;
+    }
+    
+    </style>
+
+
 </head>
 <body>
 
-    <h1>Babson College</h1>
+    <div id="banner">
+    <h1>Babson College</h1> <img id="logo" src="logo.png" alt="BabsonLogo" height="80px"></div>
 
 
-    <p> <!-- This is the first paragraph -->
+    <p id="ack"> <!-- This is the first paragraph -->
         Acknowledgement: This website is for exam in the Web Technologies Course, Fall 2018. The material
         contained here is from https://en.wikipedia.org/wiki/Babson_College. Good luck!
     </p>
-    <div>
+    <div id="page">
 
 
-        <h3>About Babson</h3>
+        <h3><a id="about">About Babson</a></h3>
         <p><!-- This is the second paragraph -->
-            Babson College is a private business school in Wellesley, Massachusetts,
+            <span>Babson</span> College is a private business school in Wellesley, Massachusetts,
             established in 1919. Its central focus is on entrepreneurship education, and it is often ranked the most
             prestigious entrepreneurship college in the United States.
         </p>
         <p> <!-- This is the third paragraph -->
-            It was founded by Roger W. Babson as an all-male business institute. Now co-ed, Babson College offers
+            It was founded by Roger W. <span>Babson</span> as an all-male business institute. Now co-ed, <span>Babson</span> College offers
             bachelor's degrees in business administration and undergraduate students have the opportunity to declare
             concentrations in more than twenty seven areas of study. Through Babson's F. W. Olin Graduate School of
             Business, the college also offers master's degrees in business administration, finance, accounting,
@@ -37,7 +90,7 @@
             considered very selective and currently has an undergraduate acceptance rate of 24%.
         </p>
         <p><!-- This is the fourth paragraph -->
-            Babson College has consistently appeared on the U.S. News & World Report rankings as the number one college
+            Babson College has consistently appeared on the <a href="https://www.usnews.com/best-graduate-schools/top-business-schools/entrepreneurship-rankings" target="_blank"> U.S. News & World Report</a> rankings as the number one college
             in entrepreneurship education for nearly three decades. In 2014, CNN's Money Magazine named Babson the
             number one college in the country for value and in 2015 the magazine ranked it second. The Economist ranked
             Babson second on its 2015 list of best colleges and universities in outperforming earnings expectations.
@@ -45,30 +98,33 @@
             & World Report.
         </p>
 
-        <h3>Basic Information</h3>
+        <h3>Basic Information</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.160431231946!2d-71.26789638454025!3d42.296442079191124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e381418b1914ef%3A0x4ef71f3899e76a89!2sBabson+College!5e0!3m2!1sen!2sus!4v1541701999046" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         <p>
-            Former names: Babson Institute (1919–1969)
+            <ul><li>Former names: Babson Institute (1919–1969)</li>
 
-            Type: Private
+            <li>Type: Private</li>
 
-            Established: September 3, 1919
+            <li>Established: September 3, 1919</li>
 
-            Location: Wellesley, Massachusetts, United States
+            <li>Location: Wellesley, Massachusetts, United States</li>
 
-            Website: www.babson.edu
+            <li>Website: <a href="http://www.babson.edu/Pages/default.aspx" target="_blank"> www.babson.edu</a></li></ul>
         </p>
 
 
         <h3>Class of 2019 statistics</h3>
+        
         <p>
-            Class size: 528
-            Percentage of women: 54
-            Percentage of multicultural students: 30
-            Percentage of international students: 25
-            Number of countries represented: 51
+            <ol><li>Class size: 528</li>
+            <li>Percentage of women: 54</li>
+            <li>Percentage of multicultural students: 30</li>
+            <li>Percentage of international students: 25</li>
+            <li>Number of countries represented: 51</li></ol>
 
         </p>
     </div>
+
+    <p><a href="index.htm#about"> Top of Page</a></p>
 
 </body>
 </html>

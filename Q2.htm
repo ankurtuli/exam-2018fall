@@ -32,6 +32,26 @@
 
     <script type="text/javascript">
 
+        function select(face){
+
+            if (face == "smile"){
+                document.getElementById("wtr").style.color = "red";
+                document.getElementById("wtr").style.fontFamily = "lucida handwriting";
+                document.getElementById("wtr").style.backgroundColor = "yellow";
+                document.getElementById("wts").innerHTML = "";
+            }
+            else if (face == "sad"){
+                document.getElementById("wts").style.color = "green";
+                document.getElementById("wts").style.fontStyle = "oblique";
+                document.getElementById("wts").style.fontSize = "2em";
+                document.getElementById("wts").style.fontFamily = "arial";
+                document.getElementById("wts").style.backgroundColor = "blue";
+                document.getElementById("wtr").innerHTML = "";
+            }
+
+
+        }
+
     </script>
 </head>
 
@@ -49,12 +69,12 @@
 
     <table>
         <tr>
-            <td><img src="smiley.jpg" alt="Smiling Face" title="Smile"></td>
-            <td>Web Tech Rocks!</td>
+            <td><img src="smiley.jpg" alt="Smiling Face" title="Smile" class="face" id="smile" onclick="select(this.id)"></td>
+            <td id="wtr">Web Tech Rocks!</td>
         </tr>
         <tr>
-            <td><img src="frown.jpg" alt="Frown Face" title="Sad"></td>
-            <td>Web Tech Sucks!</td>
+            <td><img src="frown.jpg" alt="Frown Face" title="Sad" class="face" id="sad" onclick="select(this.id)"></td>
+            <td id="wts">Web Tech Sucks!</td>
         </tr>
 
     </table>
